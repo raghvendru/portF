@@ -1,0 +1,461 @@
+.page-container {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  background: white;
+  z-index: 999999;
+}
+
+.page-loader {
+  position: relative;
+  left: calc(45% - 50px);
+  top: 40%;
+}
+
+:root {
+  --darkColor: #393e46;
+  --lightColor: #eeeeee;
+  --headingColor: green;
+  --heading: "Libre Baskerville", serif;
+  --paragraph: "Cutive Mono", monospace;
+  --button: "Julius Sans One", sans-serif;
+  --testimonials: "Dancing Script", cursive;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: var(--lightColor);
+  scroll-behavior: smooth;
+}
+button,
+a {
+  font-family: var(--button);
+  text-decoration: none;
+}
+
+p {
+  font-family: var(--paragraph);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading);
+}
+
+/*navigation bar starts here*/
+.navbar-brand span {
+  color: whitesmoke;
+}
+
+.navbar {
+  background-color: var(--darkColor) !important;
+}
+
+.navbar li {
+  padding: 10px;
+}
+
+.nav-item:hover a {
+  color: whitesmoke !important;
+  transition: 0.7s;
+}
+
+.navbar a {
+  color: var(--headingColor) !important;
+  font-size: 1.1rem;
+  letter-spacing: 1.5px;
+}
+
+/*navigation bar ends here*/
+
+/*introduction starts here*/
+.introduction img {
+  padding-top: 20px;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.text .btn {
+  border: 2px solid var(--headingColor);
+  width: 7.5rem;
+  font-size: 1.2rem;
+  color: var(--darkColor);
+}
+
+.text .btn:hover {
+  border: 2px solid var(--darkColor);
+  background-color: var(--darkColor);
+  color: var(--headingColor);
+  transition: 0.7s;
+}
+
+.myName {
+  font-family: "Spectral SC", serif;
+}
+
+/*introduction ends here*/
+
+/*skills starts here*/
+.skills {
+  background-color: var(--darkColor);
+  color: whitesmoke;
+}
+
+.bg-success {
+  background-color: var(--headingColor) !important;
+}
+
+.skillsText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*skills ends here*/
+
+/*Recent Projects starts here*/
+#recentProjects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#recentProjects a {
+  text-decoration: none;
+  color: black;
+}
+
+#recentProjects .btn {
+  border: 2px solid var(--headingColor);
+}
+
+#recentProjects .btn:hover {
+  background-color: var(--darkColor);
+  transition: 0.7s;
+  color: whitesmoke;
+  border: 2px solid var(--darkColor);
+}
+
+#recentProjects .btn:hover a {
+  color: var(--headingColor);
+}
+
+#recentProjects h3 {
+  padding-bottom: 30px;
+}
+
+#recentProjects h5 {
+  margin: 20px 0px;
+}
+
+/*Recent Projects ends here*/
+
+/*about section starts here*/
+#aboutMe {
+  text-align: center;
+  position: relative;
+  background-color: var(--darkColor);
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+  color: whitesmoke;
+  margin-top: 50px;
+}
+
+#aboutMe img {
+  border-radius: 1500px;
+  height: 200px;
+  width: 200px;
+  border: 3px solid var(--headingColor);
+  overflow: hidden;
+}
+
+#aboutMe a {
+  color: whitesmoke;
+}
+
+#aboutMe p span {
+  color: indianred;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+#aboutMe .btn:hover a {
+  color: whitesmoke;
+}
+
+#aboutMe .btn {
+  border: 2px solid var(--headingColor);
+  font-size: 1.2rem;
+  color: whitesmoke;
+}
+
+#aboutMe .btn:hover {
+  border: 2px solid var(--headingColor);
+  background-color: var(--headingColor);
+  transition: 0.7s;
+}
+
+.innerAboutMe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+/*about section ends here*/
+
+/*social icons starts here*/
+.innerSocialIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.innerSocialIcons .btn {
+  border: 2px solid var(--headingColor);
+  font-size: 1.2rem;
+}
+
+.innerSocialIcons .btn:hover {
+  border: 2px solid var(--darkColor);
+  background-color: var(--darkColor);
+  color: var(--headingColor);
+  transition: 0.7s;
+}
+
+#experience {
+  background-color: var(--darkColor) !important;
+}
+#experience h5 {
+  color: var(--headingColor);
+}
+#experience strong,
+small {
+  color: var(--headingColor);
+}
+#experience i {
+  color: var(--headingColor);
+}
+/*social icons ends here*/
+
+/*Testimonial starts here*/
+.client {
+  width: 100%;
+  border-top: 1px solid rgba(58, 58, 58, 0.03);
+  border-bottom: 1px solid rgba(58, 58, 58, 0.03);
+  padding: 50px 0px;
+}
+
+.client-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.c-box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px 0px;
+}
+
+.client-box {
+  width: 310px;
+  height: 420px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.08);
+}
+.client-box h5 {
+  text-transform: capitalize;
+  color: var(--headingColor);
+}
+
+.client-box img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.star {
+  display: flex;
+  margin: 10px 0px 10px 0px;
+}
+
+.star i {
+  color: #ff9529;
+}
+
+.client-box p {
+  color: #747474;
+  font-size: 0.9rem;
+  margin: 0px;
+  text-align: center;
+  display: block;
+  max-width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: var(--testimonials);
+}
+
+.client-box a {
+  width: 190px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  background-color: var(--headingColor);
+  border-radius: 20px;
+  box-shadow: 4px 10px 30px rgba(24, 139, 119, 0.2);
+  width: 140px;
+  margin-top: 20px;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.client-box:hover a {
+  color: whitesmoke;
+}
+
+.client-box:hover h5 {
+  color: whitesmoke;
+}
+
+.client-box:hover p {
+  color: var(--headingColor);
+}
+
+.client-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.1);
+  background-color: var(--darkColor);
+  transition: all ease 0.2s;
+}
+/*Testimonial ends here*/
+
+.adminLogin .btn {
+  background-color: var(--headingColor);
+  border-color: var(--headingColor);
+}
+
+.adminLogin a {
+  color: var(--darkColor);
+}
+
+/*footer section starts here*/
+footer {
+  background-color: var(--darkColor);
+  text-align: center;
+  padding-bottom: 30px;
+  color: whitesmoke;
+}
+
+footer h3 {
+  font-size: 1.2rem;
+}
+
+footer .col-md-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer button {
+  color: whitesmoke !important;
+}
+
+footer a,
+a:hover {
+  color: var(--headingColor);
+}
+
+footer .fab {
+  color: var(--headingColor);
+}
+/*footer section ends here*/
+
+/*media queries starts here*/
+@media (max-width: 768px) {
+  .text {
+    text-align: center;
+    align-items: center;
+  }
+
+  footer .col-md-4 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  #aboutMe {
+    height: 120vh;
+  }
+}
+
+@media (min-width: 1295px) {
+  .introduction {
+    height: 65vh;
+  }
+}
+
+@media (max-width: 576px) {
+  #recentProjects {
+    margin-top: 0%;
+  }
+  .introduction img {
+    border-radius: 1000px !important;
+  }
+  .skillsText {
+    padding-right: 2rem !important;
+  }
+  .skillsList {
+    margin-top: 20px;
+  }
+  #heroSection {
+    margin-top: 30px;
+  }
+  #heroSection h1 {
+    font-size: 1.7rem;
+  }
+
+  .introduction .text {
+    padding-top: 15px;
+  }
+
+  #aboutMe {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 942px) {
+  #recentProjects {
+    margin-top: 8rem;
+  }
+}
