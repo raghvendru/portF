@@ -21,6 +21,7 @@ const AdminLogin = () => {
         context.hideLoader();
       })
       .catch((error) => {
+        console.log(error)
         toast(error.message, { type: "error", autoClose: 15000 });
         context.hideLoader();
       });

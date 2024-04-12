@@ -8,10 +8,10 @@ export default function ContactUs() {
 
     await emailjs
       .sendForm(
-        "service_eve6ot7",
-        "template_3otv8bt",
+        "service_osqzrxt",
+        "template_t5o9gcr",
         e.target,
-        "user_8VfyMSjfMMmeXDuhMltXf"
+        "hTXfB-Fz_LsQNoah_"
       )
       .then(
         (result) => {
@@ -20,6 +20,7 @@ export default function ContactUs() {
           });
         },
         (error) => {
+          console.log(error)
           toast("Something went wrong", { type: "error" });
         }
       );
