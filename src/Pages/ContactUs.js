@@ -11,7 +11,7 @@ export default function ContactUs() {
         "service_osqzrxt",
         "template_t5o9gcr",
         e.target,
-        "hTXfB-Fz_LsQNoah_"
+        "5GTxGa9IhP4Xpa3Ig"
       )
       .then(
         (result) => {
